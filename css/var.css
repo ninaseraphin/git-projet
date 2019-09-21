@@ -1,0 +1,44 @@
+:root {
+  /*pour utiliser les polices en rem*/
+  font-size: 62.5%;
+
+  
+    /* --carte-largeur: 344px; */
+    /* --carte-hauteur: 344px; */
+    /* --carte-hauteur-image : calc(var(--carte-largeur) * 0.5625); */
+    /* --oeuvre-hauteur-image : calc(var(--carte-hauteur-image) * 3); */
+    /* --artiste-hauteur-image : calc(var(--carte-hauteur-image)); */
+    /* --main-couleur-lien : #ff1744; */
+    /* --marge-gauche : 84px; */
+    
+
+
+
+    /* COULEURS */
+    --couleur-fond : #f5f5f5;
+    --couleur-marine : #103C61;
+    --couleur-orange : #DF8E32;
+    --couleur-bleu : #9EECF8;
+
+    --couleur-menu2 : rgba(16,60,97,0.85);
+    --couleur-menu3 : rgba(16,60,97,0.70);
+    --couleur-menu4 : rgba(16,60,97,0.55);
+    --couleur-menu5 : rgba(16,60,97,0.40);
+    --couleur-menu6 : rgba(16,60,97,0.25);
+
+
+  /* MARGES, etc. */
+
+    --padding-base: 15px;
+
+
+  /* BREAKPOINTS */
+
+  --break-phone: 599px;
+  --break-tablet-portrait-up: 600px;
+  --break-tablet-landscape-up: 900px;
+  --break-desktop-up: 1200px;
+  --break-big-desktop-up: 1800px;
+
+}
+

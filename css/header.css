@@ -1,0 +1,173 @@
+:root {
+    --taille-appbar : 100px;
+}
+/* BREAK PHONE*/
+
+/*ANIMATIONS */
+
+   
+
+
+    .appbar{
+        background-color: var(--couleur-fond);
+        height:var(--taille-appbar);
+        box-sizing: border-box;
+        /* position: fixed; */
+        /* top: 0; */
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: var(--padding-base);
+    }
+
+
+    .appbar .logo img{
+        max-width:130px;
+        height:auto;
+    }
+
+    .appbar .icons{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .appbar .icons a{
+        padding: 10px;
+    }
+    .appbar .icons .compte{
+        display:none;
+    }
+
+    .appbar .fermerMenu, .appbar .langue{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .appbar .menu{
+        transform:ScaleY(0);
+        transform-origin: 50% 0%;
+        transition: transform .15s;
+        /* transform:translateX(-100%); */
+        display:flex;
+        flex-wrap: wrap;
+        width:100%;
+        position:absolute;
+        top:var(--taille-appbar);
+        left:0;
+        min-height: calc(100vh - 100px);
+        background-color: var(--couleur-fond);
+    }
+    .montre .menu{
+        transform: ScaleY(1);
+        transform-origin: 50% 0%;
+        transition: transform 235ms;
+        
+        /* transform:translateX(0%); */
+    }
+
+    .appbar .menu .lien{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        min-height:33.3%;
+    }
+    .appbar .menu .lien svg{
+        fill: var(--couleur-fond);
+    }
+    .appbar .lien:nth-of-type(1){
+        background-color: var(--couleur-marine);
+    }
+    .appbar .lien:nth-of-type(2){
+        background-color: var(--couleur-menu2);
+    }
+    .appbar .lien:nth-of-type(3){
+        background-color: var(--couleur-menu3);
+    }
+    .appbar .lien:nth-of-type(4){
+        background-color: var(--couleur-menu4);
+    }
+    .appbar .lien:nth-of-type(5){
+        background-color: var(--couleur-menu5);
+    }
+    .appbar .lien:nth-of-type(6){
+        background-color: var(--couleur-menu6);
+    }
+
+
+
+    .appbar .hidden{
+        display:none;
+    }
+
+/* BREAK TABLET PORTRAIT UP */
+@media screen and (min-width: 600px) {
+    /*Affichage ou non des icones de menu*/
+    .appbar .icons .langue{
+        display:block;
+    }
+}
+
+/* BREAK TABLET LANDSCAPE UP */
+@media screen and (min-width: 900px) {
+    /*Affichage ou non des icones de menu*/
+    /* .appbar .menu,*/ .appbar .icons .menuCubes{ 
+        display:none;
+    }
+    .appbar .icons .compte, .appbar .icons .langue{
+        display:block;
+    }
+    /*Affichage barre de menu*/
+    .appbar .menu{
+        transform:none;
+        display:flex;
+        flex-wrap: nowrap;
+        width:auto;
+        position:relative;
+        top:auto;
+        left:auto;
+        min-height: auto;
+        background: none;
+    }
+    /*Affichage des liens du menu*/
+    .appbar .menu .lien{
+        background: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        min-height:auto;
+        padding: var(--padding-base);
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .appbar .menu .lien svg{
+        display:none;
+    }
+   
+    .appbar .menu .lien:last-of-type{
+        display:none
+    }
+   
+
+
+}
+
+/* BREAK TABLET DESKTOP UP */
+@media screen and (min-width: 1200px) {
+    .appbar .menu{
+        min-width:50%;
+        justify-content: center;
+    }
+    .appbar .menu .lien{
+        min-width:18%;
+        max-width:20%;
+        font-size: 20px;
+    }
+   
+
+
+}
+
+

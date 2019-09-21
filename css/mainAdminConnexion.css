@@ -1,0 +1,48 @@
+
+/* BREAK PHONE*/
+
+/*ANIMATIONS */
+
+   h2{
+       text-align: center;
+   }
+    .pConnexion{  
+        /* position: absolute;       */
+        width: 256px;
+        height: 20px;
+        font-weight: bold;
+        font-size: 16px;        
+        line-height: 22px;
+        font-family: Open sans;
+        font-style: normal;
+        color:var(--couleur-marine);
+        text-align: justify;
+        margin: 0px;        
+    }
+
+    .inputText{
+        width: 257px;
+        height: 39px;
+        left: 591px;
+        top: 513px;
+        background: #FFFFFF;
+        border: 2px solid #103C61;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    .btnConnexion{
+        
+        width: 257px;
+        height: 39px;
+        background: #103C61;
+        border-radius: 5px;
+        font-size: 16px;        
+        line-height: 22px;
+        font-family: Open sans;
+        font-style: normal;
+        color:var(--couleur-fond); 
+    }
+
+    
+
